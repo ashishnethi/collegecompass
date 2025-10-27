@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
-}
+.container { text-align:center; font-family: 'Inter', sans-serif; margin: 20px auto; width: 80%; }
+form input, select, button { margin: 7px; padding: 8px; border-radius: 6px; }
+.card { border: 1px solid #ddd; margin: 10px; padding: 15px; border-radius: 8px; background:#fafafa; }
+button { background: #007bff; color: white; border: none; cursor: pointer; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.comparison-modal {
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comparison-modal table {
+  width: 100%;
+  border-collapse: collapse;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.comparison-modal th, .comparison-modal td {
+  border: 1px solid #bbb;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.comparison-modal button {
+  margin-top: 15px;
+  background: #007bff;
   color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
